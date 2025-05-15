@@ -1,0 +1,89 @@
+
+Second highest salary--------
+
+
+Select Max(salary) From employee where salary <(select Max(salary) from employee);
+
+Select salary from employee order by salary desc LIMIT 1 OFFSET 1;
+
+
+Program to check alnagram or not;
+
+
+s1 = "listen"  s2 = "silent";
+
+
+public class AnagramCheck{
+	
+
+public static void main(String[] args){
+	
+
+String s1 = "listen";
+String s2 ="silent";
+
+
+
+
+if(s1.lenght()!= s2.length()){
+	system.out.println("Not anagrams");
+	return;
+}
+
+char[] a1 = s1.toCharArray();
+char[] a2 = s2.toCharArray();
+
+
+Arrays.sort(a1);
+Arrays.sort(a2);
+
+if(Arrays.equals(a1,a2))
+
+
+}
+
+
+
+
+
+publci static boolean isAnagran(String s1, String s2){
+	if(s1.lenght() != s2.length())
+	return false;
+
+
+
+
+int[] count = new int[26];
+
+
+
+for(int i=0;i< s1.length(); i++){
+	
+count[s1.charAt(i) - 'a']++;
+count[s2.charAt(i) - 'a']--;
+
+}
+
+
+for (int c : count){
+	if(c!=0) return false
+}
+
+return true;
+
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
